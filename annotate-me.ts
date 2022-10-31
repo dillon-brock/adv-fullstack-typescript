@@ -86,7 +86,7 @@ function showError(x: any): void {
 }
 
 // Hack to make async functions work at the root of a module.
-(async () => {
+(async (): Promise<void> => {
   console.log('Give me a number between 1 and 10:')
   // Our final number doesn't exist yet. Must be set to an invalid state so
   // nothing can fall through.

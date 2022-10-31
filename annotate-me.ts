@@ -44,7 +44,7 @@ type AppNumber =
  * providing our valid data.
  */
 const unsanitizedNumber = (input: string): UnsanitizedNumber | null => {
-  const num = parseInt(input)
+  const num: number = parseInt(input)
   if(isNaN(num)) {
     return null
   } else {
